@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOMUNITAS SITE + Musa Void</title>
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+    body {
+      background: linear-gradient(270deg,#ff00ff,#00ffff,#ffcc00,#00ff00);
+      background-size:800% 800%;
+      animation:gradientBG 12s ease infinite;
+      color:#fff;min-height:100vh;padding:30px 20px;overflow-y:auto;
+    }
+    @keyframes gradientBG {
+      0%{background-position:0% 50%;}
+      50%{background-position:100% 50%;}
+      100%{background-position:0% 50%;}
+    }
+    .page {display:none;opacity:0;transform:translateY(30px);transition:all .6s ease;}
+    .active {display:block;opacity:1;transform:translateY(0);}
+    .container {
+      background:rgba(0,0,0,0.7);padding:30px;border-radius:20px;width:100%;
+      max-width:420px;box-shadow:0 0 30px rgba(255,255,255,0.3);text-align:center;
+    }
+    h1 {font-size:1.9rem;margin-bottom:40px;animation:blink 1.5s infinite alternate;}
+    @keyframes blink {from{color:#ff007f;}to{color:#00ffff;}}
+    .product {
+      background:linear-gradient(135deg,#ff007f,#ffcc00);
+      margin:40px 0;padding:25px;border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.5);
+      transition:.3s;
+    }
+    .product:hover {transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.7);}
+    .circle-img {width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:15px;border:3px solid #fff;}
+    .btn {
+      display:inline-block;padding:12px 22px;border-radius:12px;background:#000;
+      color:#fff;text-decoration:none;font-weight:bold;transition:.3s;
+      animation:blinkBtn 2s infinite;
+    }
+    @keyframes blinkBtn {
+      0%{background:#ff007f;color:#fff;}
+      50%{background:#00ffea;color:#000;}
+      100%{background:#ff007f;color:#fff;}
+    }
+    .btn:hover {transform:scale(1.1);}
+    .info-box {background:rgba(255,255,255,0.1);margin-top:60px;padding:25px;border-radius:15px;font-size:1rem;text-align:left;color:#eee;line-height:1.6;}
+    .next-btn {margin-top:20px;display:inline-block;padding:12px 22px;border-radius:12px;background:#00ffea;color:#000;text-decoration:none;font-weight:bold;transition:.3s;}
+    .next-btn:hover {background:#ff007f;color:#fff;transform:scale(1.05);}
+    .back-btn {display:inline-block;margin:20px auto;padding:12px 20px;border-radius:12px;background:#ff007f;color:#fff;text-decoration:none;font-weight:bold;transition:.3s;}
+    .back-btn:hover {background:#00ffea;color:#000;}
+
+    /* Styling Musa Void (langsung copy dari kode lu) */
+    #page2 {background: linear-gradient(135deg,#0a0a0a,#1e0033,#001a33);color:#f5f5f5;min-height:100vh;}
+    #page2 header {background: rgba(0,0,0,0.7);backdrop-filter: blur(10px);padding:20px;text-align:center;border-bottom:2px solid #6600ff;}
+    #page2 header h1 {font-size:2rem;color:#b366ff;text-shadow:0 0 15px #6600ff;}
+    #page2 nav {margin-top:10px;}
+    #page2 nav a {margin:0 15px;text-decoration:none;color:#66ffff;font-weight:bold;transition:.3s;}
+    #page2 nav a:hover {color:#ff66ff;}
+    #page2 section {padding:40px 20px;max-width:900px;margin:auto;}
+    #page2 section h2 {font-size:1.8rem;margin-bottom:15px;color:#ffccff;text-shadow:0 0 8px #ff33ff;}
+    #page2 .card {background:rgba(255,255,255,0.05);border-radius:15px;padding:20px;margin-bottom:20px;border:1px solid #6600ff;box-shadow:0 0 15px rgba(102,0,255,0.3);}
+    #page2 .card h3 {margin-bottom:10px;color:#99ccff;}
+    #page2 .btn {display:inline-block;margin-top:10px;padding:10px 15px;border-radius:10px;background:#6600ff;color:white;text-decoration:none;font-weight:bold;transition:.3s;}
+    #page2 .btn:hover {background:#ff33cc;box-shadow:0 0 15px #ff33cc;}
+    #page2 footer {text-align:center;padding:20px;border-top:2px solid #6600ff;margin-top:40px;font-size:.9rem;color:#999;}
+    @media(max-width:600px){
+      #page2 header h1{font-size:1.5rem;}
+      #page2 section h2{font-size:1.4rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Page 1 -->
+  <div id="page1" class="page active">
+    <div class="container">
+      <h1>⚡ Download</h1>
+      <div class="product">
+        <img src="pack.jpg" class="circle-img"><h2>Samp Playstore</h2><p>support modpack.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=ru.unisamp_mobile.launcher">Download</a>
+      </div>
+      <div class="product">
+        <img src="hajh.jpg" class="circle-img"><h2>Samp James</h2><p>Support modpack juga.</p>
+        <a class="btn" href="https://www.mediafire.com/file/gx5f0y1t1dcnnsu/CLIENT+JAMES+SAMP.zip/file">Download</a>
+      </div>
+      <div class="product">
+        <img src="apiz.jpg" class="circle-img"><h2>Download Modpack</h2><p>Modpack keren cocok buat rp.</p>
+        <a class="btn" href="https://discord.gg/nQVKh5gT">Download</a>
+      </div>
+      <div class="info-box">
+        <strong>ℹ️ Informasi:</strong><br> Terimakasih telah gunakan apk kami atau layanan kami.
+      </div>
+      <a href="#" class="next-btn" onclick="goMusa()">➡️ Lanjut ke Musa Void</a>
+    </div>
+  </div>
+
+  <!-- Page 2 (Musa Void full) -->
+  <div id="page2" class="page">
+    <header>
+      <h1>AllxMusa Void - Share Mod </h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Mods</a>
+        <a href="#">Discord</a>
+        <a href="#">Informasi</a>
+        <a href="#">Kontak</a>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h2>Selamat Datang di Website Musa Void</h2>
+      <p>
+        Semua informasi, mod, dan komunitas sudah dipusatkan di channel WhatsApp resmi Musa Void.  
+        Klik tombol di bawah buat join langsung!
+      </p>
+      <a href="https://whatsapp.com/channel/0029Vb68JxlJpe8dIXypap2E" target="_blank" class="btn">Join Channel</a>
+    </section>
+
+    <section id="mods">
+      <h2>Daftar Mods</h2>
+
+      <div class="card">
+        <h3>🚗 Mod Mobil JDM</h3>
+        <p>Mod mobil JDM keren buat GTA samp.</p>
+        <a href="https://whatsapp.com/channel/0029Vb68JxlJpe8dIXypap2E" target="_blank" class="btn">Download</a>
+      </div>
+
+      <div class="card">
+        <h3>🔫 Mod Senjata HD</h3>
+        <p>Senjata HD terbaru.</p>
+        <a href="https://whatsapp.com/channel/0029Vb68JxlJpe8dIXypap2E" target="_blank" class="btn">Download</a>
+      </div>
+
+      <div class="card">
+        <h3>👕 Mod Skin Pack</h3>
+        <p>Kumpulan skin unik dengan style gangster.</p>
+        <a href="https://whatsapp.com/channel/0029Vb68JxlJpe8dIXypap2E" target="_blank" class="btn">Download</a>
+      </div>
+
+      <div class="card">
+        <h3>🔥 Full Modpack Musa Void 🔥</h3>
+        <p>Paket lengkap berisi mobil JDM, senjata HD, skin pack, dan fitur tambahan lainnya.<br>
+        Download langsung 1x klik tanpa ribet!</p>
+        <a href="https://whatsapp.com/channel/0029Vb68JxlJpe8dIXypap2E" target="_blank" class="btn">Download Full Modpack</a>
+      </div>
+
+      <div class="card">
+        <h3>📲 Client Playstore</h3>
+        <p>Client Playstore versi terbaru untuk koneksi GTA SAMP.</p>
+        <a href="https://play.google.com/store/apps/details?id=ru.unisamp_mobile.launcher" target="_blank" class="btn">Download Client</a>
+      </div>
+
+      <div class="card">
+        <h3>🎮 SAMP Alyn</h3>
+        <p>Server SAMP Alyn lengkap dengan fitur seru.(segera datang)</p>
+        <a href="#" target="_blank" class="btn">Join Server</a>
+      </div>
+
+      <div class="card">
+        <h3>🎮 SAMP James</h3>
+        <p>Server SAMP James dengan mod keren dan komunitas aktif.</p>
+        <a href="https://www.mediafire.com/file/gx5f0y1t1dcnnsu/CLIENT+JAMES+SAMP.zip/file" target="_blank" class="btn">Join Server</a>
+      </div>
+    </section>
+
+    <section id="discord">
+      <h2>Join Discord</h2>
+      <div class="card">
+        <p>Lihat update di channel resmi.</p>
+        <a href="https://whatsapp.com/channel/0029Vb68JxlJpe8dIXypap2E" target="_blank" class="btn">Join Channel</a>
+      </div>
+    </section>
+
+    <section id="info">
+      <h2>Informasi & Update</h2>
+      <div class="card">
+        <h3>Update Terbaru</h3>
+        <p>Semua update akan diposting langsung di channel WhatsApp ALLx𝗠𝗨𝗦𝗔☠︎𝗩Ø𝗜𝗗.</p>
+        <a href="https://whatsapp.com/channel/0029Vb68JxlJpe8dIXypap2E" target="_blank" class="btn">Lihat Update</a>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak & Sosial Media</h2>
+      <div class="card">
+        <p>Untuk semua kontak & sosial media diarahkan ke channel WhatsApp Musa Void.</p>
+        <a href="https://whatsapp.com/channel/0029Vb68JxlJpe8dIXypap2E" target="_blank" class="btn">Join Channel</a>
+      </div>
+    </section>
+
+    <div style="text-align:center;">
+      <a href="#" class="back-btn" onclick="goBack()">⬅️ Kembali</a>
+    </div>
+
+    <footer>
+      <p>© ALLx𝗠𝗨𝗦𝗔☠︎𝗩Ø𝗜𝗗. Ke channel resmi WhatsApp.</p>
+    </footer>
+  </div>
+
+  <script>
+    function goMusa(){
+      document.getElementById("page1").classList.remove("active");
+      document.getElementById("page2").classList.add("active");
+    }
+    function goBack(){
+      document.getElementById("page2").classList.remove("active");
+      document.getElementById("page1").classList.add("active");
+    }
+  </script>
+</body>
+</html>
